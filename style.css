@@ -1,0 +1,428 @@
+/* 
+External Stylesheet : 
+Writing CSS in a seperate document & linking it with HTML file . . */
+
+/* Universal collector . . */
+*{
+    padding: 0px;
+    margin: 0px;
+    /* color: rgb(78, 126, 214); */
+}
+
+/* set background color */
+body {
+    background-color: #c8e0e0;
+    /* hex pattern . .*/
+}
+
+/* Element Selector . .*/
+
+h2{
+    /* text decorations */
+    text-decoration: salmon dotted underline;
+    text-align: right;
+    /* color set for h2 */
+    color:rgb(93, 131, 18);  /* rgb pattern*/
+}
+
+/* color setting for paragraph . .  */
+p{
+    color: royalblue;
+}
+
+/* color set for button . . */
+button{
+    color: rgb(48, 46, 46);
+    /* button background color . . */
+    background-color: burlywood;
+    display: block;
+    height: 40px;
+    width: 100px;
+}
+
+
+/* ID selector . .*/
+#headingThree{
+    color:chocolate;
+}
+
+/* class selector . . */
+.select{
+    height: 300;
+    width: 300px;
+    border: solid black 1px ;
+    background-color: silver;
+    color:crimson;
+}
+
+/* text align : left/right/center/start/end . .*/
+p{
+  text-align: center;  
+  font-family: cursive, Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color:brown;
+}
+
+/* text decoration : underline / line-through / overline */
+a{
+    font-size: larger;
+    color: rgb(198, 230, 20);
+    /* text-decoration: none; */
+}
+
+/* font weight : normal/bold/dark/lighter from 100-900 */
+#h1{
+    font-weight: normal;
+}
+
+#h2{
+    font-weight: lighter;
+}
+
+#h3{
+    font-weight: bold;
+}
+
+#h4{
+    font-weight: 700;
+}
+
+
+
+#two{
+
+    color: rgb(11, 58, 59);
+
+    /*font family : 
+    also use multiple font families for best user experince
+    coz some browser dont have same font family . . . 
+    there are five main font-families : 
+    1.serif  2.sans-serif  3.cursive   4.fantasy   5.Monospace*/
+    font-family: fantasy;
+   
+    text-align: left; 
+
+    /*Units in CSS : 
+    absolute in css
+    pixels(px) ->  96px = 1inch = 2.54 cm */
+    font-size: 20px;
+
+    /*line-height property : it shows height between line . . 
+    line-height: 2px/20px/normal*/
+
+    line-height: 30px;
+
+    /* text-transform property : can show text into uppercase/
+    lowercase or capitalize or none...*/
+    text-transform: capitalize;
+}
+
+#div1 {
+     background-color:aquamarine;
+     color: rgb(92, 13, 7);
+
+     /* box midels in CSS  : 
+
+     height property : It sets the content area height of the elements */
+     height: 300px;
+
+     /* width property : It sets the content area width of the elements */
+     width: 300px;
+
+     /* border property : Used to set an elements border
+     border-width / border-style / border-color
+      */
+      /* border-width: 4px;
+      border-style: solid;
+      border-color: yellowgreen; */
+
+      /* Border Shorthand property : */
+     border : 5px solid rgb(173, 100, 4) ;
+
+    /* border-radius : used to round the corners of an 
+    element's outer border edge . .*/
+    border-radius: 15px; 
+    /* due to this can make circles . .  */
+    /* border-radius: 50%; */
+
+    /* padding :  area between content to border . . 
+    padding-left\right\top\bottom  : 25px */
+    /* padding-left:50px;
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 10px; */
+
+    /* padding shorthand . .  */
+    /* padding: 50px; */
+
+    /* padding clockwise format : top right bottom left */
+    padding: 20px 40px 60px 80px;
+
+    /* Margin : space between two box borders . .  
+    margin-right/left/top/bottom : px*/
+    /* margin-top : 100px;
+    margin-bottom: 40px; */
+
+    /* Margin Shorthand . .
+    margin clockwise format : top right bottom left */
+    
+    margin: 50px;
+}
+
+
+
+
+#div2{
+    color: rgb(5, 97, 66);
+    height: 100px;
+    width: 100px;
+    margin: 25px;
+    padding: 25px;
+
+    /* Display Property : 
+    display : inline / block / online-block / none
+    inline :takes only required space . .
+    block : takes full space available in width 
+    inline-block : similar to inline but we can set margin and padding . .
+    none: to remove element from document flow */
+
+    /* to set inline-bloak height-width and padding-margin be same . . */
+    display: inline-block; 
+
+    /* display:none is used to diappeared elements . .
+    no space is reserved or blocked for elements. .  */
+
+
+    /* Visibility : when visibility is set to none, 
+                    space for elements is reserved . . 
+     */
+     /* visibility: hidden; */
+
+     /* Alpha Channel : 
+     opacity of color from (0 - 1) 0 : not visible & 1 : dark / complete */
+    background-color: rgb(255, 97, 66, 0.8);
+ }
+
+ /* Units in CSS : relative units..*/
+#divBox{
+    height: 200px;
+    width: 200px;
+    background-color: blue;
+    font-size: 20px;
+}
+
+#divBox2{
+
+    /* Percentage(%): It is often used to define a size as 
+    relative to an element's parent object . . */
+    height: 50%;
+    width: 20%;
+    background-color: yellow;
+    margin: 20%;
+
+    /* em : Font size of the parent , is same for child  
+    but , also width of child is depend on own child font-size*/
+    font-size: 2em;
+    width: 10em;
+
+    /* rem (root em ) :display: font size of root element .*/
+    width: 20rem;
+
+    /* other relative units : 
+    vh : relative to 1% viewport / browser height . . 
+    vw : relative to 1% viewport / browser width*/
+
+
+    /* Position : the position CSS property sets how elements
+    is positioned in a document
+    position : static / relative / absolute / fixed 
+
+    static : default position(z-index property have no effect)
+    relative : element relative to itself(z-index will work)
+    absolute : positions relative to its closet positioned ancestor means it have position in parent tag base. 
+    fixed : stays at specific location even if scrolled , depend on browser postion
+    sticky : position based on user's scroll position  .
+    */
+
+    position: relative;
+    top:10px;
+
+
+    /* z-index : It decides the stack level of elements
+    Overlapping elements with a larger z-index cover those with smaller one
+    z-index : auto(0) / 1 / 2 / -1 / -2  */
+    z-index:1 ;
+/* if values are positive it goes front and value are 
+    negative it goes back of element . .
+    also if position is static z- index not working . . */
+}
+
+#imgDiv{
+
+    margin-top: 30px;
+    height: 400px;
+    width: 400px;
+    /* to set background img */
+    background-image: url("pic.jpg");
+    /* background size : 
+    background-size : cover / contain / auto 
+    by default it is auto . .*/
+    background-size: cover;
+}
+
+body{
+    /* text-align: center; */
+    background-image: url("pic1.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+/* Flexbox :
+Flexible Box Layout 
+It is a one-dimensional layout 
+method for arranging items in rows or columns.
+flex items always lies into container they were not leave container. .  */
+div{
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    border: 2px solid rgb(153, 188, 216);
+}
+
+#container{
+    text-align: center;
+    height: 600px;
+    width: 600px;
+    border: 4px solid black;
+
+    /* display flex-box : it means it start flex box properties . . */
+    display: flex;
+
+    /* Flexbox Direction It sets how flex items are placed in the flex container,
+        along which axis and direction. 
+        direction only use for container not for individual item . 
+        flex-direction: row;(default) main-axis = row (left to right)
+        flex-direction: row-reverse; main-axis = row (right to left)
+        flex-direction: column; main-axis = column(top to bottom)
+        flex-direction: column-reverse; main-axis = column (bottom to top) */
+
+    flex-direction: row;
+
+
+    /* Flex Properties 
+    for Flex Container 
+
+    1.justify-content: alignment along the main axis. 
+    flex-start / flex-end / centre / space-evenly / space-around /space-between */
+    justify-content: center;
+
+    /* 2.flex-wrap: nowrap / wrap / wrap-reverse  */
+    /* flex-wrap: wrap; */
+
+    /* 3.align-items: alignment along the cross axis.  */
+    align-items: flex-start;
+
+    /* 4.align-content: alignment of space between & around the content along cross-axis */ 
+    /* align-content: center; */
+
+}
+
+#box1{
+    /* height: 50px;
+    width: 150px; */
+    background-color: rgb(37, 180, 121);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: cursive;
+    font-size: bold;
+    background-size: cover;
+}
+
+#box2{
+    /* height: 150px;
+    width: 50px; */
+    background-color: rgb(117, 24, 129);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: cursive;
+    font-size: bold;
+    background-size: cover;
+
+    /* Flex Properties 
+        for Flex Item 
+        align-self: alignment of individual along the cross axis. */
+        align-self: flex-start ;
+}
+
+#box3{
+
+    background-color: rgb(30, 146, 35);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: cursive;
+    font-size: bold;
+    background-size: cover;
+}
+
+#box4{
+    /* height: 150px;
+    width: 300px; */
+    background-color: rgb(192, 60, 67);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: cursive;
+    font-size: bold;
+    background-size: cover;
+
+    /* flex-shrink: how much a flex item will shrink relative to 
+        the rest of the flex items if space is available silmilar to 
+        align items but for individual element and it overrides align items grow & shrink take values like 0, 1, 2, 3 0=doesn't grow at all */
+
+    flex-shrink: 2;
+}
+
+#box5{
+    /* height: 50px;
+    width: 100px; */
+    background-color: rgb(18, 82, 201);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-family: cursive;
+    font-size: bold;
+    background-size: cover;
+    /* align-self: flex-end; */
+
+    /* flex-grow: how much a flex item will grow relative to 
+        the rest of the flex items if space is available */
+
+    flex-grow: 2;
+}
+
+/* Media Queries :
+ Help create a responsive website in today's world everyone has a different device with thousand of different screen sizes if you built a website people will use it on laptop, big screen computers,an iphone,a big screen android phone or a small screen one, an ipad even orientation is different like landscape or portrait so it's important that layout looks good on all so we need design to be responsive, respond to different screen sizes & orientation */
+
+#sampleDiv{
+    height: 100px;
+    width: 100px;
+    background-color: chartreuse;
+    color: black;
+}
+/* @media (width : 550px) {
+    #sampleDiv{
+        background-color: red;
+    }
+} */
+
+/* @media (min-width : 600px) {
+    #sampleDiv {
+        background-color: rgb(49, 17, 17);
+    }
+} */
+
+ @media (min-width : 300px) and (max-width : 600px) {
+    #sampleDiv {
+        background-color: rgb(143, 81, 81);
+    }
+}
+
